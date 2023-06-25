@@ -1,0 +1,332 @@
+[
+ {
+  "InstFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/t_mapper.vhd",
+  "InstLine" : 8,
+  "InstName" : "t_mapper",
+  "ModuleFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/t_mapper.vhd",
+  "ModuleLine" : 8,
+  "ModuleName" : "t_mapper",
+  "SubInsts" : [
+   {
+    "InstFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/t_mapper.vhd",
+    "InstLine" : 201,
+    "InstName" : "clock1",
+    "ModuleFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/src/gowin_rpll/gowin_rpll.v",
+    "ModuleLine" : 10,
+    "ModuleName" : "Gowin_rPLL"
+   },
+   {
+    "InstFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/t_mapper.vhd",
+    "InstLine" : 235,
+    "InstName" : "denoise8_1",
+    "ModuleFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise_low8.vhd",
+    "ModuleLine" : 4,
+    "ModuleName" : "denoise_low8",
+    "SubInsts" : [
+     {
+      "InstFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise_low8.vhd",
+      "InstLine" : 29,
+      "InstName" : "denoise[0].denoise8",
+      "ModuleFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise_low.vhd",
+      "ModuleLine" : 5,
+      "ModuleName" : "denoise_low"
+     },
+     {
+      "InstFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise_low8.vhd",
+      "InstLine" : 29,
+      "InstName" : "denoise[1].denoise8",
+      "ModuleFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise_low.vhd",
+      "ModuleLine" : 5,
+      "ModuleName" : "denoise_low"
+     },
+     {
+      "InstFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise_low8.vhd",
+      "InstLine" : 29,
+      "InstName" : "denoise[2].denoise8",
+      "ModuleFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise_low.vhd",
+      "ModuleLine" : 5,
+      "ModuleName" : "denoise_low"
+     },
+     {
+      "InstFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise_low8.vhd",
+      "InstLine" : 29,
+      "InstName" : "denoise[3].denoise8",
+      "ModuleFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise_low.vhd",
+      "ModuleLine" : 5,
+      "ModuleName" : "denoise_low"
+     },
+     {
+      "InstFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise_low8.vhd",
+      "InstLine" : 29,
+      "InstName" : "denoise[4].denoise8",
+      "ModuleFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise_low.vhd",
+      "ModuleLine" : 5,
+      "ModuleName" : "denoise_low"
+     },
+     {
+      "InstFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise_low8.vhd",
+      "InstLine" : 29,
+      "InstName" : "denoise[5].denoise8",
+      "ModuleFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise_low.vhd",
+      "ModuleLine" : 5,
+      "ModuleName" : "denoise_low"
+     },
+     {
+      "InstFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise_low8.vhd",
+      "InstLine" : 29,
+      "InstName" : "denoise[6].denoise8",
+      "ModuleFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise_low.vhd",
+      "ModuleLine" : 5,
+      "ModuleName" : "denoise_low"
+     },
+     {
+      "InstFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise_low8.vhd",
+      "InstLine" : 29,
+      "InstName" : "denoise[7].denoise8",
+      "ModuleFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise_low.vhd",
+      "ModuleLine" : 5,
+      "ModuleName" : "denoise_low"
+     }
+    ]
+   },
+   {
+    "InstFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/t_mapper.vhd",
+    "InstLine" : 242,
+    "InstName" : "denoise8_2",
+    "ModuleFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise_8.vhd",
+    "ModuleLine" : 4,
+    "ModuleName" : "denoise_8",
+    "SubInsts" : [
+     {
+      "InstFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise_8.vhd",
+      "InstLine" : 29,
+      "InstName" : "denoise_8[0].denoise8",
+      "ModuleFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise.vhd",
+      "ModuleLine" : 5,
+      "ModuleName" : "denoise"
+     },
+     {
+      "InstFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise_8.vhd",
+      "InstLine" : 29,
+      "InstName" : "denoise_8[1].denoise8",
+      "ModuleFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise.vhd",
+      "ModuleLine" : 5,
+      "ModuleName" : "denoise"
+     },
+     {
+      "InstFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise_8.vhd",
+      "InstLine" : 29,
+      "InstName" : "denoise_8[2].denoise8",
+      "ModuleFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise.vhd",
+      "ModuleLine" : 5,
+      "ModuleName" : "denoise"
+     },
+     {
+      "InstFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise_8.vhd",
+      "InstLine" : 29,
+      "InstName" : "denoise_8[3].denoise8",
+      "ModuleFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise.vhd",
+      "ModuleLine" : 5,
+      "ModuleName" : "denoise"
+     },
+     {
+      "InstFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise_8.vhd",
+      "InstLine" : 29,
+      "InstName" : "denoise_8[4].denoise8",
+      "ModuleFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise.vhd",
+      "ModuleLine" : 5,
+      "ModuleName" : "denoise"
+     },
+     {
+      "InstFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise_8.vhd",
+      "InstLine" : 29,
+      "InstName" : "denoise_8[5].denoise8",
+      "ModuleFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise.vhd",
+      "ModuleLine" : 5,
+      "ModuleName" : "denoise"
+     },
+     {
+      "InstFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise_8.vhd",
+      "InstLine" : 29,
+      "InstName" : "denoise_8[6].denoise8",
+      "ModuleFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise.vhd",
+      "ModuleLine" : 5,
+      "ModuleName" : "denoise"
+     },
+     {
+      "InstFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise_8.vhd",
+      "InstLine" : 29,
+      "InstName" : "denoise_8[7].denoise8",
+      "ModuleFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise.vhd",
+      "ModuleLine" : 5,
+      "ModuleName" : "denoise"
+     }
+    ]
+   },
+   {
+    "InstFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/t_mapper.vhd",
+    "InstLine" : 249,
+    "InstName" : "denoise8_3",
+    "ModuleFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise_8.vhd",
+    "ModuleLine" : 4,
+    "ModuleName" : "denoise_8",
+    "SubInsts" : [
+     {
+      "InstFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise_8.vhd",
+      "InstLine" : 29,
+      "InstName" : "denoise_8[0].denoise8",
+      "ModuleFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise.vhd",
+      "ModuleLine" : 5,
+      "ModuleName" : "denoise"
+     },
+     {
+      "InstFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise_8.vhd",
+      "InstLine" : 29,
+      "InstName" : "denoise_8[1].denoise8",
+      "ModuleFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise.vhd",
+      "ModuleLine" : 5,
+      "ModuleName" : "denoise"
+     },
+     {
+      "InstFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise_8.vhd",
+      "InstLine" : 29,
+      "InstName" : "denoise_8[2].denoise8",
+      "ModuleFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise.vhd",
+      "ModuleLine" : 5,
+      "ModuleName" : "denoise"
+     },
+     {
+      "InstFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise_8.vhd",
+      "InstLine" : 29,
+      "InstName" : "denoise_8[3].denoise8",
+      "ModuleFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise.vhd",
+      "ModuleLine" : 5,
+      "ModuleName" : "denoise"
+     },
+     {
+      "InstFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise_8.vhd",
+      "InstLine" : 29,
+      "InstName" : "denoise_8[4].denoise8",
+      "ModuleFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise.vhd",
+      "ModuleLine" : 5,
+      "ModuleName" : "denoise"
+     },
+     {
+      "InstFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise_8.vhd",
+      "InstLine" : 29,
+      "InstName" : "denoise_8[5].denoise8",
+      "ModuleFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise.vhd",
+      "ModuleLine" : 5,
+      "ModuleName" : "denoise"
+     },
+     {
+      "InstFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise_8.vhd",
+      "InstLine" : 29,
+      "InstName" : "denoise_8[6].denoise8",
+      "ModuleFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise.vhd",
+      "ModuleLine" : 5,
+      "ModuleName" : "denoise"
+     },
+     {
+      "InstFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise_8.vhd",
+      "InstLine" : 29,
+      "InstName" : "denoise_8[7].denoise8",
+      "ModuleFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise.vhd",
+      "ModuleLine" : 5,
+      "ModuleName" : "denoise"
+     }
+    ]
+   },
+   {
+    "InstFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/t_mapper.vhd",
+    "InstLine" : 256,
+    "InstName" : "denoise8_4",
+    "ModuleFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise_8.vhd",
+    "ModuleLine" : 4,
+    "ModuleName" : "denoise_8",
+    "SubInsts" : [
+     {
+      "InstFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise_8.vhd",
+      "InstLine" : 29,
+      "InstName" : "denoise_8[0].denoise8",
+      "ModuleFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise.vhd",
+      "ModuleLine" : 5,
+      "ModuleName" : "denoise"
+     },
+     {
+      "InstFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise_8.vhd",
+      "InstLine" : 29,
+      "InstName" : "denoise_8[1].denoise8",
+      "ModuleFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise.vhd",
+      "ModuleLine" : 5,
+      "ModuleName" : "denoise"
+     },
+     {
+      "InstFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise_8.vhd",
+      "InstLine" : 29,
+      "InstName" : "denoise_8[2].denoise8",
+      "ModuleFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise.vhd",
+      "ModuleLine" : 5,
+      "ModuleName" : "denoise"
+     },
+     {
+      "InstFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise_8.vhd",
+      "InstLine" : 29,
+      "InstName" : "denoise_8[3].denoise8",
+      "ModuleFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise.vhd",
+      "ModuleLine" : 5,
+      "ModuleName" : "denoise"
+     },
+     {
+      "InstFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise_8.vhd",
+      "InstLine" : 29,
+      "InstName" : "denoise_8[4].denoise8",
+      "ModuleFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise.vhd",
+      "ModuleLine" : 5,
+      "ModuleName" : "denoise"
+     },
+     {
+      "InstFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise_8.vhd",
+      "InstLine" : 29,
+      "InstName" : "denoise_8[5].denoise8",
+      "ModuleFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise.vhd",
+      "ModuleLine" : 5,
+      "ModuleName" : "denoise"
+     },
+     {
+      "InstFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise_8.vhd",
+      "InstLine" : 29,
+      "InstName" : "denoise_8[6].denoise8",
+      "ModuleFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise.vhd",
+      "ModuleLine" : 5,
+      "ModuleName" : "denoise"
+     },
+     {
+      "InstFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise_8.vhd",
+      "InstLine" : 29,
+      "InstName" : "denoise_8[7].denoise8",
+      "ModuleFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise.vhd",
+      "ModuleLine" : 5,
+      "ModuleName" : "denoise"
+     }
+    ]
+   },
+   {
+    "InstFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/t_mapper.vhd",
+    "InstLine" : 263,
+    "InstName" : "mono1",
+    "ModuleFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/monostable/monostable.vhd",
+    "ModuleLine" : 7,
+    "ModuleName" : "monostable"
+   },
+   {
+    "InstFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/t_mapper.vhd",
+    "InstLine" : 271,
+    "InstName" : "pram1",
+    "ModuleFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/psram_tang_nano_9k/src/psram_controller.v",
+    "ModuleLine" : 11,
+    "ModuleName" : "PsramController"
+   }
+  ]
+ }
+]

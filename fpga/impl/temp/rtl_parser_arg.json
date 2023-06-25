@@ -1,0 +1,50 @@
+{
+ "Files" : [
+  {
+   "Path" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/psram_tang_nano_9k/src/psram_controller.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/src/gowin_rpll/gowin_rpll.v",
+   "Type" : "verilog"
+  },
+  {
+   "Library" : "work",
+   "Path" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise.vhd",
+   "Type" : "vhdl"
+  },
+  {
+   "Library" : "work",
+   "Path" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise_8.vhd",
+   "Type" : "vhdl"
+  },
+  {
+   "Library" : "work",
+   "Path" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise_low.vhd",
+   "Type" : "vhdl"
+  },
+  {
+   "Library" : "work",
+   "Path" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/denoise/denoise_low8.vhd",
+   "Type" : "vhdl"
+  },
+  {
+   "Library" : "work",
+   "Path" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/monostable/monostable.vhd",
+   "Type" : "vhdl"
+  },
+  {
+   "Library" : "work",
+   "Path" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/t_mapper.vhd",
+   "Type" : "vhdl"
+  }
+ ],
+ "IncludePath" : [
+
+ ],
+ "LoopLimit" : 2000,
+ "ResultFile" : "D:/datos/GitHub/MSXmapper_tn9k/fpga/impl/temp/rtl_parser.result",
+ "Top" : "t_mapper",
+ "VerilogStd" : "verilog_2001",
+ "VhdlStd" : "vhdl_93"
+}

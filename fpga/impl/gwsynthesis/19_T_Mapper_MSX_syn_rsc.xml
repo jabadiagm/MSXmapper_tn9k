@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="t_mapper" Register="124" Alu="7" Lut="99">
+    <SubModule name="clock1"/>
+    <SubModule name="denoise8_1">
+        <SubModule name="denoise[0].denoise8" Register="3" Lut="1"/>
+        <SubModule name="denoise[1].denoise8" Register="3" Lut="1"/>
+        <SubModule name="denoise[3].denoise8" Register="3" Lut="1"/>
+        <SubModule name="denoise[4].denoise8" Register="3" Lut="1"/>
+        <SubModule name="denoise[5].denoise8" Register="3" Lut="1"/>
+        <SubModule name="denoise[6].denoise8" Register="3" Lut="1"/>
+        <SubModule name="denoise[7].denoise8" Register="3" Lut="1"/>
+    </SubModule>
+    <SubModule name="denoise8_2">
+        <SubModule name="denoise_8[0].denoise8" Register="3" Lut="2"/>
+        <SubModule name="denoise_8[1].denoise8" Register="3" Lut="2"/>
+        <SubModule name="denoise_8[2].denoise8" Register="3" Lut="2"/>
+        <SubModule name="denoise_8[3].denoise8" Register="3" Lut="2"/>
+        <SubModule name="denoise_8[4].denoise8" Register="3" Lut="2"/>
+        <SubModule name="denoise_8[5].denoise8" Register="3" Lut="2"/>
+        <SubModule name="denoise_8[6].denoise8" Register="3" Lut="2"/>
+        <SubModule name="denoise_8[7].denoise8" Register="3" Lut="2"/>
+    </SubModule>
+    <SubModule name="denoise8_3">
+        <SubModule name="denoise_8[0].denoise8" Register="3" Lut="2"/>
+        <SubModule name="denoise_8[1].denoise8" Register="3" Lut="2"/>
+        <SubModule name="denoise_8[2].denoise8" Register="3" Lut="2"/>
+        <SubModule name="denoise_8[3].denoise8" Register="3" Lut="2"/>
+        <SubModule name="denoise_8[4].denoise8" Register="3" Lut="2"/>
+        <SubModule name="denoise_8[5].denoise8" Register="3" Lut="2"/>
+        <SubModule name="denoise_8[6].denoise8" Register="3" Lut="2"/>
+        <SubModule name="denoise_8[7].denoise8" Register="3" Lut="2"/>
+    </SubModule>
+    <SubModule name="denoise8_4">
+        <SubModule name="denoise_8[0].denoise8" Register="3" Lut="2"/>
+        <SubModule name="denoise_8[1].denoise8" Register="3" Lut="2"/>
+        <SubModule name="denoise_8[2].denoise8" Register="3" Lut="2"/>
+        <SubModule name="denoise_8[3].denoise8" Register="3" Lut="2"/>
+        <SubModule name="denoise_8[4].denoise8" Register="3" Lut="2"/>
+        <SubModule name="denoise_8[5].denoise8" Register="3" Lut="2"/>
+        <SubModule name="denoise_8[6].denoise8" Register="3" Lut="2"/>
+        <SubModule name="denoise_8[7].denoise8" Register="3" Lut="2"/>
+    </SubModule>
+    <SubModule name="mono1" Register="26" Alu="23" Lut="12"/>
+    <SubModule name="pram1" Register="104" Alu="14" Lut="77"/>
+    <SubModule name="gw_gao_inst_0" Register="378" Alu="10" Lut="432" Bsram="2" Ssram="14"/>
+</Module>
