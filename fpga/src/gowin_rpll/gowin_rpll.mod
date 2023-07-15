@@ -7,15 +7,15 @@
 
 -mod_name Gowin_rPLL
 -file_name gowin_rpll
--path D:/datos/proyectos/42_Tang_Nano_9k/19_T_Mapper_MSX/src/gowin_rpll/
+-path D:/datos/proyectos/42_Tang_Nano_9k/30_T_Mapper_MSX_nuevas_tang/src/gowin_rpll/
 -type PLL
 -rPll true
 -file_type vlg
 -dev_type GW1NR-9C
 -dyn_idiv_sel false
--idiv_sel 9
+-idiv_sel 3
 -dyn_fbdiv_sel false
--fbdiv_sel 26
+-fbdiv_sel 8
 -dyn_odiv_sel false
 -odiv_sel 8
 -dyn_da_en false

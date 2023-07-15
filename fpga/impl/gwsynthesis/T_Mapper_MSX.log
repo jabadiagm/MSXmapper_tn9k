@@ -1,0 +1,85 @@
+GowinSynthesis start
+Running parser ...
+Analyzing Verilog file 'D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\psram_tang_nano_9k\src\psram_controller.v'
+Undeclared symbol 'cs_n_tbuf', assumed default net type 'wire'("D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\psram_tang_nano_9k\src\psram_controller.v":180)
+Undeclared symbol 'rwds_tbuf', assumed default net type 'wire'("D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\psram_tang_nano_9k\src\psram_controller.v":184)
+Undeclared symbol 'rwds_oen_tbuf', assumed default net type 'wire'("D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\psram_tang_nano_9k\src\psram_controller.v":184)
+Undeclared symbol 'ck_tbuf', assumed default net type 'wire'("D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\psram_tang_nano_9k\src\psram_controller.v":199)
+Analyzing Verilog file 'D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\src\gowin_rpll\gowin_rpll.v'
+Analyzing Verilog file 'D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\t_mapper.v'
+Analyzing VHDL file 'D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\denoise\denoise.vhd'
+Analyzing entity 'denoise'("D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\denoise\denoise.vhd":5)
+Analyzing architecture 'rtl'("D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\denoise\denoise.vhd":15)
+Analyzing VHDL file 'D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\denoise\denoise_8.vhd'
+Analyzing entity 'denoise_8'("D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\denoise\denoise_8.vhd":4)
+Analyzing architecture 'rtl'("D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\denoise\denoise_8.vhd":14)
+Analyzing VHDL file 'D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\denoise\denoise_low.vhd'
+Analyzing entity 'denoise_low'("D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\denoise\denoise_low.vhd":5)
+Analyzing architecture 'rtl'("D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\denoise\denoise_low.vhd":15)
+Analyzing VHDL file 'D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\denoise\denoise_low8.vhd'
+Analyzing entity 'denoise_low8'("D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\denoise\denoise_low8.vhd":4)
+Analyzing architecture 'rtl'("D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\denoise\denoise_low8.vhd":14)
+Analyzing VHDL file 'D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\monostable\monostable.vhd'
+Analyzing entity 'monostable'("D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\monostable\monostable.vhd":7)
+Analyzing architecture 'rtl'("D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\monostable\monostable.vhd":18)
+Compiling module 't_mapper'("D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\t_mapper.v":3)
+Compiling module 'Gowin_rPLL'("D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\src\gowin_rpll\gowin_rpll.v":10)
+Switching to VHDL mode to elaborate design unit 'denoise_low8'("D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\t_mapper.v":162)
+Processing 'denoise_low8(rtl)'("D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\denoise\denoise_low8.vhd":4)
+Processing 'denoise_low(rtl)'("D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\denoise\denoise_low.vhd":5)
+Returning to Verilog mode to proceed with elaboration("D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\t_mapper.v":162)
+Switching to VHDL mode to elaborate design unit 'denoise_8'("D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\t_mapper.v":168)
+Processing 'denoise_8(rtl)'("D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\denoise\denoise_8.vhd":4)
+Processing 'denoise(rtl)'("D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\denoise\denoise.vhd":5)
+Returning to Verilog mode to proceed with elaboration("D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\t_mapper.v":168)
+Switching to VHDL mode to elaborate design unit 'denoise_8'("D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\t_mapper.v":174)
+Returning to Verilog mode to proceed with elaboration("D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\t_mapper.v":174)
+Switching to VHDL mode to elaborate design unit 'denoise_8'("D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\t_mapper.v":180)
+Returning to Verilog mode to proceed with elaboration("D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\t_mapper.v":180)
+Switching to VHDL mode to elaborate design unit 'monostable'("D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\t_mapper.v":186)
+Processing 'monostable(rtl)'("D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\monostable\monostable.vhd":7)
+Returning to Verilog mode to proceed with elaboration("D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\t_mapper.v":186)
+WARN  (EX3073) : Port 'Q1' remains unconnected for this instance("D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\psram_tang_nano_9k\src\psram_controller.v":181)
+WARN  (EX3073) : Port 'Q1' remains unconnected for this instance("D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\psram_tang_nano_9k\src\psram_controller.v":200)
+Compiling module 'PsramController(FREQ=72000000)'("D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\psram_tang_nano_9k\src\psram_controller.v":11)
+WARN  (EX3791) : Expression size 16 truncated to fit in target size 15("D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\psram_tang_nano_9k\src\psram_controller.v":161)
+WARN  (EX2565) : Input 'TX' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\psram_tang_nano_9k\src\psram_controller.v":181)
+WARN  (EX2565) : Input 'TX' on this instance is undriven. Assigning to 0, simulation mismatch possible. Please assign the input or remove the declaration("D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\psram_tang_nano_9k\src\psram_controller.v":200)
+WARN  (EX3779) : 'bus_addr' should be on the sensitivity list. Signal missing is added and assuming complete sensitivity list specified. RTL design and post-synthesis netlist simulations may differ as a result("D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\t_mapper.v":229)
+WARN  (EX3779) : 'bus_dout' should be on the sensitivity list. Signal missing is added and assuming complete sensitivity list specified. RTL design and post-synthesis netlist simulations may differ as a result("D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\t_mapper.v":230)
+WARN  (EX3779) : 'bus_dout' should be on the sensitivity list. Signal missing is added and assuming complete sensitivity list specified. RTL design and post-synthesis netlist simulations may differ as a result("D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\t_mapper.v":231)
+WARN  (EX3779) : 'bus_dout' should be on the sensitivity list. Signal missing is added and assuming complete sensitivity list specified. RTL design and post-synthesis netlist simulations may differ as a result("D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\t_mapper.v":232)
+WARN  (EX3779) : 'bus_dout' should be on the sensitivity list. Signal missing is added and assuming complete sensitivity list specified. RTL design and post-synthesis netlist simulations may differ as a result("D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\t_mapper.v":233)
+WARN  (EX2420) : Latch inferred for net 'mapper_reg0[7]'; We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\t_mapper.v":236)
+NOTE  (EX0101) : Current top module is "t_mapper"
+WARN  (EX0211) : The output port "O_psram_ck[1]" of module "PsramController(FREQ=72000000)" has no driver, assigning undriven bits to Z, simulation mismatch possible("D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\psram_tang_nano_9k\src\psram_controller.v":30)
+WARN  (EX0211) : The output port "O_psram_cs_n[1]" of module "PsramController(FREQ=72000000)" has no driver, assigning undriven bits to Z, simulation mismatch possible("D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\psram_tang_nano_9k\src\psram_controller.v":33)
+WARN  (EX0211) : The output port "O_psram_ck_n[1]" of module "t_mapper" has no driver, assigning undriven bits to Z, simulation mismatch possible("D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\t_mapper.v":34)
+WARN  (EX0211) : The output port "O_psram_ck_n[0]" of module "t_mapper" has no driver, assigning undriven bits to Z, simulation mismatch possible("D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\t_mapper.v":34)
+WARN  (EX0211) : The output port "O_psram_reset_n[1]" of module "t_mapper" has no driver, assigning undriven bits to Z, simulation mismatch possible("D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\t_mapper.v":37)
+WARN  (EX0211) : The output port "O_psram_reset_n[0]" of module "t_mapper" has no driver, assigning undriven bits to Z, simulation mismatch possible("D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\t_mapper.v":37)
+[5%] Running netlist conversion ...
+WARN  (CV0016) : Input ex_bus_clk_3m6 is unused("D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\t_mapper.v":19)
+WARN  (CV0016) : Input ex_reset_n is unused("D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\t_mapper.v":27)
+WARN  (CV0016) : Input ex_btn0 is unused("D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\t_mapper.v":29)
+WARN  (CV0019) : Inout IO_psram_rwds[1] is unused("D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\t_mapper.v":35)
+WARN  (CV0021) : Inout IO_psram_dq[15:8] is unused("D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\t_mapper.v":36)
+Running device independent optimization ...
+[10%] Optimizing Phase 0 completed
+[15%] Optimizing Phase 1 completed
+[25%] Optimizing Phase 2 completed
+Running inference ...
+[30%] Inferring Phase 0 completed
+[40%] Inferring Phase 1 completed
+[50%] Inferring Phase 2 completed
+[55%] Inferring Phase 3 completed
+Running technical mapping ...
+[60%] Tech-Mapping Phase 0 completed
+[65%] Tech-Mapping Phase 1 completed
+[75%] Tech-Mapping Phase 2 completed
+[80%] Tech-Mapping Phase 3 completed
+[90%] Tech-Mapping Phase 4 completed
+WARN  (NL0002) : The module "denoise_low" instantiated to "denoise[2].denoise8" is swept in optimizing("D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\denoise\denoise_low8.vhd":29)
+[95%] Generate netlist file "D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\impl\gwsynthesis\T_Mapper_MSX.vg" completed
+[100%] Generate report file "D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\impl\gwsynthesis\T_Mapper_MSX_syn.rpt.html" completed
+GowinSynthesis finish

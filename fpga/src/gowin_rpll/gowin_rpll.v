@@ -5,7 +5,7 @@
 //Part Number: GW1NR-LV9QN88PC6/I5
 //Device: GW1NR-9
 //Device Version: C
-//Created Time: Tue Apr 18 22:05:07 2023
+//Created Time: Fri Jul 07 14:00:27 2023
 
 module Gowin_rPLL (clkout, clkoutp, clkin);
 
@@ -42,9 +42,9 @@ rPLL rpll_inst (
 
 defparam rpll_inst.FCLKIN = "27";
 defparam rpll_inst.DYN_IDIV_SEL = "false";
-defparam rpll_inst.IDIV_SEL = 8;
+defparam rpll_inst.IDIV_SEL = 2;
 defparam rpll_inst.DYN_FBDIV_SEL = "false";
-defparam rpll_inst.FBDIV_SEL = 25;
+defparam rpll_inst.FBDIV_SEL = 7;
 defparam rpll_inst.DYN_ODIV_SEL = "false";
 defparam rpll_inst.ODIV_SEL = 8;
 defparam rpll_inst.PSDA_SEL = "0100";

@@ -38,7 +38,7 @@
  "Multiple_File_Compilation_Unit" : true,
  "Number_of_Critical_Paths" : "",
  "Number_of_Start/End_Points" : "",
- "OUTPUT_BASE_NAME" : "19_T_Mapper_MSX",
+ "OUTPUT_BASE_NAME" : "T_Mapper_MSX",
  "POWER_ON_RESET_MONITOR" : true,
  "PRINT_BSRAM_VALUE" : true,
  "PROGRAM_DONE_BYPASS" : false,

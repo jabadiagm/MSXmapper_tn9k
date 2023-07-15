@@ -39,29 +39,9 @@ module gw_gao(
     \mapper_reg3[2] ,
     \mapper_reg3[1] ,
     \mapper_reg3[0] ,
-    \psram_addr[21] ,
-    \psram_addr[20] ,
-    \psram_addr[19] ,
-    \psram_addr[18] ,
-    \psram_addr[17] ,
-    \psram_addr[16] ,
-    \psram_addr[15] ,
-    \psram_addr[14] ,
-    \psram_addr[13] ,
-    \psram_addr[12] ,
-    \psram_addr[11] ,
-    \psram_addr[10] ,
-    \psram_addr[9] ,
-    \psram_addr[8] ,
-    \psram_addr[7] ,
-    \psram_addr[6] ,
-    \psram_addr[5] ,
-    \psram_addr[4] ,
-    \psram_addr[3] ,
-    \psram_addr[2] ,
-    \psram_addr[1] ,
-    \psram_addr[0] ,
     mapper_read,
+    bus_data_reverse,
+    \mono1/counting ,
     mapper_write,
     \check_fsm_counter_max[7] ,
     \check_fsm_counter_max[6] ,
@@ -71,7 +51,7 @@ module gw_gao(
     \check_fsm_counter_max[2] ,
     \check_fsm_counter_max[1] ,
     \check_fsm_counter_max[0] ,
-    clk_78m,
+    clk_72m,
     tms_pad_i,
     tck_pad_i,
     tdi_pad_i,
@@ -118,29 +98,9 @@ input \mapper_reg3[3] ;
 input \mapper_reg3[2] ;
 input \mapper_reg3[1] ;
 input \mapper_reg3[0] ;
-input \psram_addr[21] ;
-input \psram_addr[20] ;
-input \psram_addr[19] ;
-input \psram_addr[18] ;
-input \psram_addr[17] ;
-input \psram_addr[16] ;
-input \psram_addr[15] ;
-input \psram_addr[14] ;
-input \psram_addr[13] ;
-input \psram_addr[12] ;
-input \psram_addr[11] ;
-input \psram_addr[10] ;
-input \psram_addr[9] ;
-input \psram_addr[8] ;
-input \psram_addr[7] ;
-input \psram_addr[6] ;
-input \psram_addr[5] ;
-input \psram_addr[4] ;
-input \psram_addr[3] ;
-input \psram_addr[2] ;
-input \psram_addr[1] ;
-input \psram_addr[0] ;
 input mapper_read;
+input bus_data_reverse;
+input \mono1/counting ;
 input mapper_write;
 input \check_fsm_counter_max[7] ;
 input \check_fsm_counter_max[6] ;
@@ -150,7 +110,7 @@ input \check_fsm_counter_max[3] ;
 input \check_fsm_counter_max[2] ;
 input \check_fsm_counter_max[1] ;
 input \check_fsm_counter_max[0] ;
-input clk_78m;
+input clk_72m;
 input tms_pad_i;
 input tck_pad_i;
 input tdi_pad_i;
@@ -196,29 +156,9 @@ wire \mapper_reg3[3] ;
 wire \mapper_reg3[2] ;
 wire \mapper_reg3[1] ;
 wire \mapper_reg3[0] ;
-wire \psram_addr[21] ;
-wire \psram_addr[20] ;
-wire \psram_addr[19] ;
-wire \psram_addr[18] ;
-wire \psram_addr[17] ;
-wire \psram_addr[16] ;
-wire \psram_addr[15] ;
-wire \psram_addr[14] ;
-wire \psram_addr[13] ;
-wire \psram_addr[12] ;
-wire \psram_addr[11] ;
-wire \psram_addr[10] ;
-wire \psram_addr[9] ;
-wire \psram_addr[8] ;
-wire \psram_addr[7] ;
-wire \psram_addr[6] ;
-wire \psram_addr[5] ;
-wire \psram_addr[4] ;
-wire \psram_addr[3] ;
-wire \psram_addr[2] ;
-wire \psram_addr[1] ;
-wire \psram_addr[0] ;
 wire mapper_read;
+wire bus_data_reverse;
+wire \mono1/counting ;
 wire mapper_write;
 wire \check_fsm_counter_max[7] ;
 wire \check_fsm_counter_max[6] ;
@@ -228,7 +168,7 @@ wire \check_fsm_counter_max[3] ;
 wire \check_fsm_counter_max[2] ;
 wire \check_fsm_counter_max[1] ;
 wire \check_fsm_counter_max[0] ;
-wire clk_78m;
+wire clk_72m;
 wire tms_pad_i;
 wire tck_pad_i;
 wire tdi_pad_i;
@@ -306,8 +246,8 @@ ao_top_0  u_la0_top(
     .trig1_i(mapper_write),
     .trig2_i(bus_reset_n),
     .trig3_i({\check_fsm_counter_max[7] ,\check_fsm_counter_max[6] ,\check_fsm_counter_max[5] ,\check_fsm_counter_max[4] ,\check_fsm_counter_max[3] ,\check_fsm_counter_max[2] ,\check_fsm_counter_max[1] ,\check_fsm_counter_max[0] }),
-    .data_i({bus_reset_n,ex_bus_data_reverse_n,ex_bus_mreq_n,ex_bus_rd_n,ex_bus_sltsl_n,psram_read,psram_write,psram_busy,\mapper_reg0[7] ,\mapper_reg0[6] ,\mapper_reg0[5] ,\mapper_reg0[4] ,\mapper_reg0[3] ,\mapper_reg0[2] ,\mapper_reg0[1] ,\mapper_reg0[0] ,\mapper_reg1[7] ,\mapper_reg1[6] ,\mapper_reg1[5] ,\mapper_reg1[4] ,\mapper_reg1[3] ,\mapper_reg1[2] ,\mapper_reg1[1] ,\mapper_reg1[0] ,\mapper_reg2[7] ,\mapper_reg2[6] ,\mapper_reg2[5] ,\mapper_reg2[4] ,\mapper_reg2[3] ,\mapper_reg2[2] ,\mapper_reg2[1] ,\mapper_reg2[0] ,\mapper_reg3[7] ,\mapper_reg3[6] ,\mapper_reg3[5] ,\mapper_reg3[4] ,\mapper_reg3[3] ,\mapper_reg3[2] ,\mapper_reg3[1] ,\mapper_reg3[0] ,\psram_addr[21] ,\psram_addr[20] ,\psram_addr[19] ,\psram_addr[18] ,\psram_addr[17] ,\psram_addr[16] ,\psram_addr[15] ,\psram_addr[14] ,\psram_addr[13] ,\psram_addr[12] ,\psram_addr[11] ,\psram_addr[10] ,\psram_addr[9] ,\psram_addr[8] ,\psram_addr[7] ,\psram_addr[6] ,\psram_addr[5] ,\psram_addr[4] ,\psram_addr[3] ,\psram_addr[2] ,\psram_addr[1] ,\psram_addr[0] }),
-    .clk_i(clk_78m)
+    .data_i({bus_reset_n,ex_bus_data_reverse_n,ex_bus_mreq_n,ex_bus_rd_n,ex_bus_sltsl_n,psram_read,psram_write,psram_busy,\mapper_reg0[7] ,\mapper_reg0[6] ,\mapper_reg0[5] ,\mapper_reg0[4] ,\mapper_reg0[3] ,\mapper_reg0[2] ,\mapper_reg0[1] ,\mapper_reg0[0] ,\mapper_reg1[7] ,\mapper_reg1[6] ,\mapper_reg1[5] ,\mapper_reg1[4] ,\mapper_reg1[3] ,\mapper_reg1[2] ,\mapper_reg1[1] ,\mapper_reg1[0] ,\mapper_reg2[7] ,\mapper_reg2[6] ,\mapper_reg2[5] ,\mapper_reg2[4] ,\mapper_reg2[3] ,\mapper_reg2[2] ,\mapper_reg2[1] ,\mapper_reg2[0] ,\mapper_reg3[7] ,\mapper_reg3[6] ,\mapper_reg3[5] ,\mapper_reg3[4] ,\mapper_reg3[3] ,\mapper_reg3[2] ,\mapper_reg3[1] ,\mapper_reg3[0] ,mapper_read,bus_data_reverse,\mono1/counting }),
+    .clk_i(clk_72m)
 );
 
 endmodule

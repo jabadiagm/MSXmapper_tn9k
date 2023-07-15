@@ -2,7 +2,7 @@
 <GAO_CONFIG>
     <Version>3.0</Version>
     <Mode>Standard</Mode>
-    <AoCore index="0" sample_clock="clk_78m" trig_type="0" storage_depth="256" window_num="1" capture_amount="256" trigger_pos="128" module_name="t_mapper" force_trigger_by_falling_edge="false">
+    <AoCore index="0" sample_clock="clk_72m" trig_type="0" storage_depth="256" window_num="1" capture_amount="256" trigger_pos="128" module_name="t_mapper" force_trigger_by_falling_edge="false">
         <SignalList>
             <Signal>bus_reset_n</Signal>
             <Signal>ex_bus_data_reverse_n</Signal>
@@ -52,30 +52,9 @@
                 <Signal>mapper_reg3[1]</Signal>
                 <Signal>mapper_reg3[0]</Signal>
             </Bus>
-            <Bus name="psram_addr[21:0]">
-                <Signal>psram_addr[21]</Signal>
-                <Signal>psram_addr[20]</Signal>
-                <Signal>psram_addr[19]</Signal>
-                <Signal>psram_addr[18]</Signal>
-                <Signal>psram_addr[17]</Signal>
-                <Signal>psram_addr[16]</Signal>
-                <Signal>psram_addr[15]</Signal>
-                <Signal>psram_addr[14]</Signal>
-                <Signal>psram_addr[13]</Signal>
-                <Signal>psram_addr[12]</Signal>
-                <Signal>psram_addr[11]</Signal>
-                <Signal>psram_addr[10]</Signal>
-                <Signal>psram_addr[9]</Signal>
-                <Signal>psram_addr[8]</Signal>
-                <Signal>psram_addr[7]</Signal>
-                <Signal>psram_addr[6]</Signal>
-                <Signal>psram_addr[5]</Signal>
-                <Signal>psram_addr[4]</Signal>
-                <Signal>psram_addr[3]</Signal>
-                <Signal>psram_addr[2]</Signal>
-                <Signal>psram_addr[1]</Signal>
-                <Signal>psram_addr[0]</Signal>
-            </Bus>
+            <Signal>mapper_read</Signal>
+            <Signal>bus_data_reverse</Signal>
+            <Signal>mono1/counting</Signal>
         </SignalList>
         <Triggers>
             <Trigger index="0">
@@ -142,5 +121,5 @@
             <Expression>M0|M1</Expression>
         </Expressions>
     </AoCore>
-    <GAO_ID>1111111001011010</GAO_ID>
+    <GAO_ID>0011000010110000</GAO_ID>
 </GAO_CONFIG>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Module name="t_mapper" Register="124" Alu="7" Lut="99">
+<Module name="t_mapper" Register="101" Lut="92">
     <SubModule name="clock1"/>
     <SubModule name="denoise8_1">
         <SubModule name="denoise[0].denoise8" Register="3" Lut="1"/>
@@ -40,7 +40,6 @@
         <SubModule name="denoise_8[6].denoise8" Register="3" Lut="2"/>
         <SubModule name="denoise_8[7].denoise8" Register="3" Lut="2"/>
     </SubModule>
-    <SubModule name="mono1" Register="26" Alu="23" Lut="12"/>
-    <SubModule name="pram1" Register="104" Alu="14" Lut="77"/>
-    <SubModule name="gw_gao_inst_0" Register="378" Alu="10" Lut="432" Bsram="2" Ssram="14"/>
+    <SubModule name="mono1" Register="26" Alu="23" Lut="14"/>
+    <SubModule name="pram1" Register="104" Alu="14" Lut="79"/>
 </Module>

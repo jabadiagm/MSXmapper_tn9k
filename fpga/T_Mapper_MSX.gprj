@@ -7,13 +7,14 @@
     <FileList>
         <File path="psram_tang_nano_9k/src/psram_controller.v" type="file.verilog" enable="1"/>
         <File path="src/gowin_rpll/gowin_rpll.v" type="file.verilog" enable="1"/>
+        <File path="t_mapper.v" type="file.verilog" enable="1"/>
         <File path="denoise/denoise.vhd" type="file.vhdl" enable="1"/>
         <File path="denoise/denoise_8.vhd" type="file.vhdl" enable="1"/>
         <File path="denoise/denoise_low.vhd" type="file.vhdl" enable="1"/>
         <File path="denoise/denoise_low8.vhd" type="file.vhdl" enable="1"/>
         <File path="monostable/monostable.vhd" type="file.vhdl" enable="1"/>
-        <File path="t_mapper.vhd" type="file.vhdl" enable="1"/>
         <File path="tang9k.cst" type="file.cst" enable="1"/>
-        <File path="src/19_T_Mapper_MSX.rao" type="file.gao" enable="1"/>
+        <File path="timing.sdc" type="file.sdc" enable="1"/>
+        <File path="src/19_T_Mapper_MSX.rao" type="file.gao" enable="0"/>
     </FileList>
 </Project>

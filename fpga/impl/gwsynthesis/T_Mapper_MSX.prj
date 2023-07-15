@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gowin-synthesis-project>
+<Project>
+    <Version>beta</Version>
+    <Device id="GW1NR-9C" package="QFN88P" speed="6" partNumber="GW1NR-LV9QN88PC6/I5"/>
+    <FileList>
+        <File path="D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\psram_tang_nano_9k\src\psram_controller.v" type="verilog"/>
+        <File path="D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\src\gowin_rpll\gowin_rpll.v" type="verilog"/>
+        <File path="D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\t_mapper.v" type="verilog"/>
+        <File path="D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\denoise\denoise.vhd" type="vhdl"/>
+        <File path="D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\denoise\denoise_8.vhd" type="vhdl"/>
+        <File path="D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\denoise\denoise_low.vhd" type="vhdl"/>
+        <File path="D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\denoise\denoise_low8.vhd" type="vhdl"/>
+        <File path="D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\monostable\monostable.vhd" type="vhdl"/>
+    </FileList>
+    <OptionList>
+        <Option type="disable_insert_pad" value="0"/>
+        <Option type="dsp_balance" value="0"/>
+        <Option type="looplimit" value="2000"/>
+        <Option type="output_file" value="D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\impl\gwsynthesis\T_Mapper_MSX.vg"/>
+        <Option type="print_all_synthesis_warning" value="0"/>
+        <Option type="ram_rw_check" value="1"/>
+        <Option type="top_module" value="t_mapper"/>
+        <Option type="verilog_language" value="verilog-2001"/>
+        <Option type="vhdl_language" value="vhdl-1993"/>
+    </OptionList>
+</Project>

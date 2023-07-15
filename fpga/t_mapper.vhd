@@ -79,8 +79,8 @@ architecture struct of t_mapper is
 	signal iorq_rd_n 						: std_logic :='1';
 
     --clocks
-    signal clk_78m                  : std_logic;
-    signal clk_78m_p                : std_logic;
+    signal clk_72m                  : std_logic;
+    signal clk_72m_p                : std_logic;
 
     --denoise signals
     signal ex_control_bus   : std_logic_vector(7 downto 0);
@@ -200,8 +200,8 @@ begin
 
 clock1: Gowin_rPLL
     port map (
-        clkout => clk_78m,
-        clkoutp => clk_78m_p,
+        clkout => clk_72m,
+        clkoutp => clk_72m_p,
         clkin => ex_clk_27m
     );
 
@@ -235,28 +235,28 @@ bus_rfsh_n <= control_bus(0);
 denoise8_1: denoise_low8
     port map (
 		data8_in    => ex_control_bus,
-		clock		=> clk_78m,
+		clock		=> clk_72m,
 		data8_out	=> control_bus
     );
 
 denoise8_2: denoise_8
     port map (
 		data8_in    => ex_bus_addr(7 downto 0),
-		clock		=> clk_78m,
+		clock		=> clk_72m,
 		data8_out	=> bus_addr(7 downto 0)
     );
 
 denoise8_3: denoise_8
     port map (
 		data8_in    => ex_bus_addr(15 downto 8),
-		clock		=> clk_78m,
+		clock		=> clk_72m,
 		data8_out	=> bus_addr(15 downto 8)
     );
 
 denoise8_4: denoise_8
     port map (
 		data8_in    => ex_bus_dout,
-		clock		=> clk_78m,
+		clock		=> clk_72m,
 		data8_out	=> bus_dout
     );
 
@@ -277,8 +277,8 @@ pram1 : PsramController
 
     port map(
 
-        clk             => clk_78m,
-        clk_p           => clk_78m_p, -- phase-shifted clock for driving O_psram_ck
+        clk             => clk_72m,
+        clk_p           => clk_72m_p, -- phase-shifted clock for driving O_psram_ck
         resetn          => bus_reset_n,
         read            => psram_read, -- Set to 1 to read from RAM
         write           => psram_write, -- Set to 1 to write to RAM
@@ -320,14 +320,14 @@ begin
     end if;
 end process;
 
-fsm: process (clk_78m, bus_reset_n)
+fsm: process (clk_72m, bus_reset_n)
 begin
     if bus_reset_n = '0' then
         fsm_status <=  idle;
         psram_read <= '0';
         psram_write <= '0';
     else
-        if rising_edge(clk_78m) then
+        if rising_edge(clk_72m) then
             case fsm_status is
                 when idle =>
                     fsm_addr <= bus_addr;
@@ -402,14 +402,14 @@ begin
     end if;
 end process fsm;
 
-check_fsm : process (clk_78m, bus_reset_n)
+check_fsm : process (clk_72m, bus_reset_n)
 begin
     if bus_reset_n = '0' then
         check_fsm_counter       <= (others => '0');
         check_fsm_counter_max   <= (others => '0');
         check_fsm_status        <= state1;
     else
-        if rising_edge(clk_78m) then
+        if rising_edge(clk_72m) then
             case check_fsm_status is
                 when state1 =>
                     check_fsm_counter <= (others => '0');

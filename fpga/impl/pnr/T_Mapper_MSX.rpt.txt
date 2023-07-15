@@ -5,33 +5,33 @@
 1. PnR Messages
 
   <Report Title>: PnR Report
-  <Design File>: D:\datos\GitHub\MSXmapper_tn9k\fpga\impl\gwsynthesis\19_T_Mapper_MSX.vg
-  <Physical Constraints File>: D:\datos\GitHub\MSXmapper_tn9k\fpga\tang9k.cst
-  <Timing Constraints File>: ---
+  <Design File>: D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\impl\gwsynthesis\T_Mapper_MSX.vg
+  <Physical Constraints File>: D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\tang9k.cst
+  <Timing Constraints File>: D:\datos\proyectos\42_Tang_Nano_9k\30_T_Mapper_MSX_nuevas_tang\timing.sdc
   <PnR Version>: V1.9.8.10
   <Part Number>: GW1NR-LV9QN88PC6/I5
   <Device>: GW1NR-9
   <Device Version>: C
-  <Created Time>:Sun Jun 25 09:19:49 2023
+  <Created Time>:Mon Jul 10 12:33:30 2023
 
 
 2. PnR Details
 
   Running placement:
-    Placement Phase 0: CPU time = 0h 0m 0.213s, Elapsed time = 0h 0m 0.207s
-    Placement Phase 1: CPU time = 0h 0m 0.121s, Elapsed time = 0h 0m 0.124s
-    Placement Phase 2: CPU time = 0h 0m 0.282s, Elapsed time = 0h 0m 0.28s
+    Placement Phase 0: CPU time = 0h 0m 0.05s, Elapsed time = 0h 0m 0.052s
+    Placement Phase 1: CPU time = 0h 0m 0.095s, Elapsed time = 0h 0m 0.094s
+    Placement Phase 2: CPU time = 0h 0m 0.101s, Elapsed time = 0h 0m 0.101s
     Placement Phase 3: CPU time = 0h 0m 1s, Elapsed time = 0h 0m 1s
-    Total Placement: CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s
+    Total Placement: CPU time = 0h 0m 1s, Elapsed time = 0h 0m 1s
  Running routing:
-    Routing Phase 0: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0.001s
-    Routing Phase 1: CPU time = 0h 0m 0.302s, Elapsed time = 0h 0m 0.306s
-    Routing Phase 2: CPU time = 0h 0m 0.574s, Elapsed time = 0h 0m 0.57s
-    Total Routing: CPU time = 0h 0m 0.876s, Elapsed time = 0h 0m 0.877s
+    Routing Phase 0: CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s
+    Routing Phase 1: CPU time = 0h 0m 0.174s, Elapsed time = 0h 0m 0.173s
+    Routing Phase 2: CPU time = 0h 0m 0.226s, Elapsed time = 0h 0m 0.227s
+    Total Routing: CPU time = 0h 0m 0.4s, Elapsed time = 0h 0m 0.4s
  Generate output files:
-    CPU time = 0h 0m 2s, Elapsed time = 0h 0m 2s
+    CPU time = 0h 0m 1s, Elapsed time = 0h 0m 1s
 
- Total Time and Memory Usage: CPU time = 0h 0m 5s, Elapsed time = 0h 0m 5s, Peak memory usage = 210MB
+ Total Time and Memory Usage: CPU time = 0h 0m 3s, Elapsed time = 0h 0m 3s, Peak memory usage = 200MB
 
 
 3. Resource Usage Summary
@@ -39,25 +39,24 @@
   ----------------------------------------------------------
   Resources                   | Usage
   ----------------------------------------------------------
-  Logic                       | 820/8640  10%
-    --LUT,ALU,ROM16           | 736(672 LUT, 64 ALU, 0 ROM16)
-    --SSRAM(RAM16)            | 14
-  Register                    | 725/6771  11%
+  Logic                       | 277/8640  4%
+    --LUT,ALU,ROM16           | 277(238 LUT, 39 ALU, 0 ROM16)
+    --SSRAM(RAM16)            | 0
+  Register                    | 324/6771  5%
     --Logic Register as Latch | 32/6480  <1%
-    --Logic Register as FF    | 657/6480  11%
+    --Logic Register as FF    | 252/6480  4%
     --I/O Register as Latch   | 0/291  0%
-    --I/O Register as FF      | 36/291  13%
-  CLS                         | 698/4320  17%
-  I/O Port                    | 46
-  I/O Buf                     | 44
-    --Input Buf               | 28
-    --Output Buf              | 8
+    --I/O Register as FF      | 40/291  14%
+  CLS                         | 251/4320  6%
+  I/O Port                    | 42
+  I/O Buf                     | 39
+    --Input Buf               | 24
+    --Output Buf              | 7
     --Inout Buf               | 8
   IOLOGIC                     | 21%
     --IDDR                    | 9
     --ODDR                    | 11
-  BSRAM                       | 8%
-    --SDPB                    | 2
+  BSRAM                       | 0%
   DSP                         | 0%
   PLL                         | 1/2  50%
   DCS                         | 0/8  0%
@@ -79,7 +78,7 @@
   -----------------------
   bank 1   | 18/25(72%)  
   bank 2   | 16/23(69%)  
-  bank 3   | 21/23(91%)  
+  bank 3   | 17/23(73%)  
   =======================
 
 
@@ -88,8 +87,8 @@
   -------------------------------
   Global Clock  | Usage       
   -------------------------------
-  PRIMARY       | 5/8(63%)
-  LW            | 3/8(38%)
+  PRIMARY       | 4/8(50%)
+  LW            | 0/8(0%)
   GCLK_PIN      | 4/4(100%)
   PLL           | 1/2(50%)
   CLKDIV        | 0/8(0%)
@@ -102,14 +101,10 @@
   -------------------------------------------
   Signal         | Global Clock   | Location
   -------------------------------------------
-  ex_clk_27m_d   | PRIMARY        |  TR BL
-  mapper_reg_write| PRIMARY        |  BL
-  clk_78m        | PRIMARY        |  TR TL BR BL
-  clk_78m_p      | PRIMARY        |  TL
-  control0[0]    | PRIMARY        |  TR TL BR BL
-  control_bus_32[3]| LW             |  -
-  gao_jtag_reset | LW             |  -
-  n20_3          | LW             |  -
+  ex_clk_27m_d   | PRIMARY        |  TR BR BL
+  mapper_reg_write| PRIMARY        |  BR BL
+  clk_72m        | PRIMARY        |  TR TL BR BL
+  clk_72m_p      | PRIMARY        |  TL
   ===========================================
 
 
@@ -145,9 +140,6 @@ ex_bus_rfsh_n          |           | 69/1          | Y          | in    | IOT42[
 ex_reset_n             |           | 4/3           | Y          | in    | IOL5[A]  | LVCMOS18   | NA    | UP        | ON        | NONE       | NA         | NA        | NA         | OFF             | NA            | 1.8       
 ex_clk_27m             |           | 52/1          | Y          | in    | IOR17[A] | LVCMOS33   | NA    | UP        | ON        | NONE       | NA         | NA        | NA         | OFF             | NA            | 3.3       
 ex_btn0                |           | 3/3           | Y          | in    | IOT2[A]  | LVCMOS18   | NA    | UP        | ON        | NONE       | NA         | NA        | NA         | OFF             | NA            | 1.8       
-tms_pad_i              |           | 5/3           | N          | in    | IOL11[A] | LVCMOS18   | NA    | UP        | ON        | NONE       | NA         | NA        | NA         | OFF             | NA            | 1.8       
-tck_pad_i              |           | 6/3           | N          | in    | IOL11[B] | LVCMOS18   | NA    | UP        | ON        | NONE       | NA         | NA        | NA         | OFF             | NA            | 1.8       
-tdi_pad_i              |           | 7/3           | N          | in    | IOL12[B] | LVCMOS18   | NA    | UP        | ON        | NONE       | NA         | NA        | NA         | OFF             | NA            | 1.8       
 ex_bus_data_reverse_n  |           | 63/1          | Y          | out   | IOR5[A]  | LVCMOS33   | 8     | UP        | NA        | NA         | OFF        | FAST      | NA         | OFF             | NA            | 3.3       
 ex_led[0]              |           | 10/3          | Y          | out   | IOL15[A] | LVCMOS18   | 8     | UP        | NA        | NA         | OFF        | FAST      | NA         | OFF             | NA            | 1.8       
 ex_led[1]              |           | 11/3          | Y          | out   | IOL16[B] | LVCMOS18   | 8     | UP        | NA        | NA         | OFF        | FAST      | NA         | OFF             | NA            | 1.8       
@@ -155,7 +147,6 @@ ex_led[2]              |           | 13/3          | Y          | out   | IOL21[
 ex_led[3]              |           | 14/3          | Y          | out   | IOL22[B] | LVCMOS18   | 8     | UP        | NA        | NA         | OFF        | FAST      | NA         | OFF             | NA            | 1.8       
 ex_led[4]              |           | 15/3          | Y          | out   | IOL25[B] | LVCMOS18   | 8     | UP        | NA        | NA         | OFF        | FAST      | NA         | OFF             | NA            | 1.8       
 ex_led[5]              |           | 16/3          | Y          | out   | IOL26[B] | LVCMOS18   | 8     | UP        | NA        | NA         | OFF        | FAST      | NA         | OFF             | NA            | 1.8       
-tdo_pad_o              |           | 8/3           | N          | out   | IOL13[A] | LVCMOS18   | 8     | UP        | NA        | NA         | OFF        | FAST      | NA         | OFF             | NA            | 1.8       
 ex_bus_dout[0]         |           | 29/2          | Y          | io    | IOB13[A] | LVCMOS33   | 8     | UP        | NA        | NONE       | OFF        | FAST      | NA         | NA              | NA            | 3.3       
 ex_bus_dout[1]         |           | 30/2          | Y          | io    | IOB13[B] | LVCMOS33   | 8     | UP        | NA        | NONE       | OFF        | FAST      | NA         | NA              | NA            | 3.3       
 ex_bus_dout[2]         |           | 33/2          | Y          | io    | IOB23[A] | LVCMOS33   | 8     | UP        | NA        | NONE       | OFF        | FAST      | NA         | NA              | NA            | 3.3       
@@ -221,10 +212,10 @@ Loc./Bank| Signal                 | Dir.  | Site     | IO Type  | Drive | Pull M
 47/2     | -                      | in    | IOB43[B] | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA        | NA         | NA              | NA            | 3.3  
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 4/3      | ex_reset_n             | in    | IOL5[A]  | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA        | NA         | OFF             | NA            | 1.8  
-5/3      | tms_pad_i              | in    | IOL11[A] | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA        | NA         | OFF             | NA            | 1.8  
-6/3      | tck_pad_i              | in    | IOL11[B] | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA        | NA         | OFF             | NA            | 1.8  
-7/3      | tdi_pad_i              | in    | IOL12[B] | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA        | NA         | OFF             | NA            | 1.8  
-8/3      | tdo_pad_o              | out   | IOL13[A] | LVCMOS18 | 8     | UP        | NA        | NA         | OFF        | FAST      | NA         | OFF             | NA            | 1.8  
+5/3      | -                      | in    | IOL11[A] | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA        | NA         | NA              | NA            | 1.8  
+6/3      | -                      | in    | IOL11[B] | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA        | NA         | NA              | NA            | 1.8  
+7/3      | -                      | in    | IOL12[B] | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA        | NA         | NA              | NA            | 1.8  
+8/3      | -                      | out   | IOL13[A] | LVCMOS18 | 8     | UP        | NA        | NA         | OFF        | FAST      | NA         | NA              | NA            | 1.8  
 9/3      | -                      | in    | IOL13[B] | LVCMOS18 | NA    | UP        | ON        | NONE       | NA         | NA        | NA         | NA              | NA            | 1.8  
 10/3     | ex_led[0]              | out   | IOL15[A] | LVCMOS18 | 8     | UP        | NA        | NA         | OFF        | FAST      | NA         | OFF             | NA            | 1.8  
 11/3     | ex_led[1]              | out   | IOL16[B] | LVCMOS18 | 8     | UP        | NA        | NA         | OFF        | FAST      | NA         | OFF             | NA            | 1.8  
