@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Module name="t_mapper" Register="101" Lut="92">
+<Module name="t_mapper" Register="101" Lut="91">
     <SubModule name="clock1"/>
     <SubModule name="denoise8_1">
         <SubModule name="denoise[0].denoise8" Register="3" Lut="1"/>

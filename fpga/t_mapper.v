@@ -242,6 +242,7 @@ always @(posedge clk_72m or negedge bus_reset_n) begin
         fsm_status <=  IDLE;
         psram_read <= 1'b0;
         psram_write <= 1'b0;
+        bus_data_reverse <= 1'b0;
     end
     else begin
         case (fsm_status)
