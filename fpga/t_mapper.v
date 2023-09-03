@@ -94,9 +94,10 @@ module t_mapper (
     localparam [3:0] READ2 = 4'd3;
     localparam [3:0] READ3 = 4'd4;
     localparam [3:0] READ4 = 4'd5;
-    localparam [3:0] WRITE1 = 4'd6;
-    localparam [3:0] WRITE2 = 4'd7;
-    localparam [3:0] WRITE3 = 4'd8;
+    localparam [3:0] WRITE0 = 4'd6;
+    localparam [3:0] WRITE1 = 4'd7;
+    localparam [3:0] WRITE2 = 4'd8;
+    localparam [3:0] WRITE3 = 4'd9;
 
     //psram state machine signals
     //type type_status is (idle, addr, read1, read2, read3, read4, write1, write2, write3);
@@ -250,26 +251,34 @@ always @(posedge clk_72m or negedge bus_reset_n) begin
                 fsm_addr <= bus_addr;
                 fsm_din <= bus_dout;
                 if (mapper_write == 1'b1)
-                    fsm_status <= WRITE1;
+                    fsm_status <= WRITE0;
                 else if (mapper_read == 1'b1) 
                     fsm_status <= READ1;
 
             end
+            WRITE0: begin
+                fsm_addr <= bus_addr;
+                fsm_din <= bus_dout;
+                if (bus_clk_3m6 == 1'b0)
+                    fsm_status <= WRITE1;
+            end
             WRITE1: begin
-                //psram_addr <= "000000" & fsm_addr;
-                case (fsm_addr[15:14])
-                    2'b00 :
-                        psram_addr <= { mapper_reg0, fsm_addr[13:0] };
-                    2'b01 :
-                        psram_addr <= { mapper_reg1, fsm_addr[13:0] };
-                    2'b10 :
-                        psram_addr <= { mapper_reg2, fsm_addr[13:0] };
-                    2'b11 :
-                        psram_addr <= { mapper_reg3, fsm_addr[13:0] };
-                endcase
-                psram_din <= { fsm_din, fsm_din};
-                psram_write <= 1'b1;
-                fsm_status <= WRITE2;
+                if (bus_clk_3m6 == 1'b1) begin
+                    //psram_addr <= "000000" & fsm_addr;
+                    case (fsm_addr[15:14])
+                        2'b00 :
+                            psram_addr <= { mapper_reg0, fsm_addr[13:0] };
+                        2'b01 :
+                            psram_addr <= { mapper_reg1, fsm_addr[13:0] };
+                        2'b10 :
+                            psram_addr <= { mapper_reg2, fsm_addr[13:0] };
+                        2'b11 :
+                            psram_addr <= { mapper_reg3, fsm_addr[13:0] };
+                    endcase
+                    psram_din <= { fsm_din, fsm_din};
+                    psram_write <= 1'b1;
+                    fsm_status <= WRITE2;
+                end
             end
             WRITE2: begin
                 psram_write <= 1'b0;

@@ -9,7 +9,7 @@
   "SubInsts" : [
    {
     "InstFile" : "D:/datos/proyectos/42_Tang_Nano_9k/30_T_Mapper_MSX_nuevas_tang/t_mapper.v",
-    "InstLine" : 124,
+    "InstLine" : 125,
     "InstName" : "clock1",
     "ModuleFile" : "D:/datos/proyectos/42_Tang_Nano_9k/30_T_Mapper_MSX_nuevas_tang/src/gowin_rpll/gowin_rpll.v",
     "ModuleLine" : 10,
@@ -17,7 +17,7 @@
    },
    {
     "InstFile" : "D:/datos/proyectos/42_Tang_Nano_9k/30_T_Mapper_MSX_nuevas_tang/t_mapper.v",
-    "InstLine" : 158,
+    "InstLine" : 159,
     "InstName" : "denoise8_1",
     "ModuleFile" : "D:/datos/proyectos/42_Tang_Nano_9k/30_T_Mapper_MSX_nuevas_tang/denoise/denoise_low8.vhd",
     "ModuleLine" : 4,
@@ -91,7 +91,7 @@
    },
    {
     "InstFile" : "D:/datos/proyectos/42_Tang_Nano_9k/30_T_Mapper_MSX_nuevas_tang/t_mapper.v",
-    "InstLine" : 164,
+    "InstLine" : 165,
     "InstName" : "denoise8_2",
     "ModuleFile" : "D:/datos/proyectos/42_Tang_Nano_9k/30_T_Mapper_MSX_nuevas_tang/denoise/denoise_8.vhd",
     "ModuleLine" : 4,
@@ -165,7 +165,7 @@
    },
    {
     "InstFile" : "D:/datos/proyectos/42_Tang_Nano_9k/30_T_Mapper_MSX_nuevas_tang/t_mapper.v",
-    "InstLine" : 170,
+    "InstLine" : 171,
     "InstName" : "denoise8_3",
     "ModuleFile" : "D:/datos/proyectos/42_Tang_Nano_9k/30_T_Mapper_MSX_nuevas_tang/denoise/denoise_8.vhd",
     "ModuleLine" : 4,
@@ -239,7 +239,7 @@
    },
    {
     "InstFile" : "D:/datos/proyectos/42_Tang_Nano_9k/30_T_Mapper_MSX_nuevas_tang/t_mapper.v",
-    "InstLine" : 176,
+    "InstLine" : 177,
     "InstName" : "denoise8_4",
     "ModuleFile" : "D:/datos/proyectos/42_Tang_Nano_9k/30_T_Mapper_MSX_nuevas_tang/denoise/denoise_8.vhd",
     "ModuleLine" : 4,
@@ -313,7 +313,7 @@
    },
    {
     "InstFile" : "D:/datos/proyectos/42_Tang_Nano_9k/30_T_Mapper_MSX_nuevas_tang/t_mapper.v",
-    "InstLine" : 182,
+    "InstLine" : 183,
     "InstName" : "mono1",
     "ModuleFile" : "D:/datos/proyectos/42_Tang_Nano_9k/30_T_Mapper_MSX_nuevas_tang/monostable/monostable.vhd",
     "ModuleLine" : 7,
@@ -321,7 +321,7 @@
    },
    {
     "InstFile" : "D:/datos/proyectos/42_Tang_Nano_9k/30_T_Mapper_MSX_nuevas_tang/t_mapper.v",
-    "InstLine" : 192,
+    "InstLine" : 193,
     "InstName" : "pram1",
     "ModuleFile" : "D:/datos/proyectos/42_Tang_Nano_9k/30_T_Mapper_MSX_nuevas_tang/psram_tang_nano_9k/src/psram_controller.v",
     "ModuleLine" : 11,

@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Module name="t_mapper" Register="101" Lut="91">
+<Module name="t_mapper" Register="101" Lut="97">
     <SubModule name="clock1"/>
     <SubModule name="denoise8_1">
         <SubModule name="denoise[0].denoise8" Register="3" Lut="1"/>
         <SubModule name="denoise[1].denoise8" Register="3" Lut="1"/>
+        <SubModule name="denoise[2].denoise8" Register="3" Lut="1"/>
         <SubModule name="denoise[3].denoise8" Register="3" Lut="1"/>
         <SubModule name="denoise[4].denoise8" Register="3" Lut="1"/>
         <SubModule name="denoise[5].denoise8" Register="3" Lut="1"/>
@@ -40,6 +41,6 @@
         <SubModule name="denoise_8[6].denoise8" Register="3" Lut="2"/>
         <SubModule name="denoise_8[7].denoise8" Register="3" Lut="2"/>
     </SubModule>
-    <SubModule name="mono1" Register="26" Alu="23" Lut="14"/>
+    <SubModule name="mono1" Register="26" Alu="23" Lut="15"/>
     <SubModule name="pram1" Register="104" Alu="14" Lut="79"/>
 </Module>
